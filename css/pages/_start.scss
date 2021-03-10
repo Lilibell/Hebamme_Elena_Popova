@@ -1,0 +1,67 @@
+.header {
+  height: 80vh;
+  width: 100%;
+  margin-top: 8rem;
+  background-image: linear-gradient(
+      rgba($color-white, 0.6),
+      rgba($color-white, 0.6)
+    ),
+    url(../img/ignacio-campo-tC9boyqy_40-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include respond(tab-port) {
+    height: auto;
+    margin-top: 8.5rem;
+    flex-direction: column;
+  }
+
+  @include respond(phone) {
+    height: auto;
+  }
+
+  &__welcome {
+    font-size: $default-font-size;
+    width: 60%;
+    height: auto;
+    -webkit-animation: moveInBottom 1s ease-out;
+    animation: moveInBottom 1s ease-out;
+
+    @include respond(tab-land) {
+      margin: 3rem 3rem 3rem 0;
+    }
+
+    @include respond(tab-port) {
+      width: 90%;
+      margin: 0 4rem 4rem 4rem;
+    }
+  }
+
+  &__shape {
+    margin: 3rem;
+    -webkit-animation: moveInBottom 1s ease-out;
+    animation: moveInBottom 1s ease-out;
+
+    &-img {
+      width: 26rem;
+      height: 26rem;
+      padding: 1rem;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 1.5rem dotted $color-primary;
+
+      @include respond(tab-port) {
+        width: 22rem;
+        height: 22rem;
+        border: 1.2rem dotted $color-primary;
+      }
+    }
+  }
+}

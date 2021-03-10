@@ -1,0 +1,139 @@
+.navigation {
+  width: 100%;
+  height: 8.5rem;
+  position: fixed;
+  top: 0;
+  background-image: linear-gradient($color-primary, $color-primary-dark);
+  overflow: hidden;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  z-index: 1000;
+
+  &--responsive {
+    height: 38rem;
+  }
+
+  &__nav {
+    display: flex;
+    align-items: baseline;
+    width: 100%;
+    height: 100%;
+
+    @include respond(tab-port) {
+      position: relative;
+    }
+
+    &--responsive {
+      display: inline-block;
+
+      & a.navigation__link {
+        display: block;
+        text-align: left;
+        padding: 1.5rem 2rem;
+        margin: 0;
+        border-top: 1px solid $color-gold-very-light;
+      }
+    }
+  }
+
+  &__logo {
+    display: inline-block;
+    margin-right: auto;
+    margin-left: 3rem;
+    color: $color-gold-very-light;
+    font-family: "Rochester", cursive;
+    font-size: 5rem;
+
+    @include respond(phone) {
+      font-size: 4rem;
+      margin: 1rem auto 0 1rem;
+      height: 7.5rem;
+    }
+
+    @include respond(small-phone) {
+      font-size: 3.5rem;
+    }
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      text-decoration: none;
+      font-size: 2.5rem;
+      font-weight: 600;
+      color: $color-gold-very-light;
+      text-shadow: 0.5rem 1rem 2rem rgba($color-black, 0.2);
+      display: inline-block;
+      -webkit-transition: all 0.2s;
+      -moz-transition: all 0.2s;
+      -ms-transition: all 0.2s;
+      -o-transition: all 0.2s;
+      transition: all 0.2s;
+      margin-right: 7rem;
+
+      @include respond(tab-land) {
+        margin-right: 4rem;
+      }
+
+      @include respond(tab-port) {
+        display: none;
+      }
+    }
+
+    &:hover,
+    &:active {
+      color: $color-gold-light;
+      transform-origin: initial;
+      -webkit-transform: scale(1.1);
+      -moz-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+      -o-transform: scale(1.1);
+      transform: scale(1.1);
+
+      @include respond(tab-land) {
+        overflow: hidden;
+        color: $color-white;
+        background-color: rgba($color-gold-light, 0.6);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+      }
+    }
+  }
+
+  &__icon {
+    display: none;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+
+    @include respond(tab-port) {
+      display: inline-block;
+      font-size: 3rem;
+      position: absolute;
+      top: 1.7rem;
+      right: 2rem;
+      color: $color-gold-very-light;
+    }
+
+    &:hover,
+    &:active {
+      @include respond(tab-port) {
+        color: $color-gold-light;
+        transform-origin: initial;
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        -o-transform: scale(1.1);
+        transform: scale(1.1);
+      }
+    }
+  }
+}

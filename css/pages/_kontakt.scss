@@ -1,0 +1,147 @@
+.section__kontakt {
+  width: 100%;
+  height: auto;
+  margin: 15rem 0 6rem 0;
+}
+
+.kontakt {
+  &__wrapper {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    @include respond(tab-land) {
+      flex-direction: column;
+    }
+  }
+
+  &__form {
+    width: 40%;
+    height: 50rem;
+    padding: 2rem;
+    -webkit-animation: moveInLeft 1s ease-out;
+    animation: moveInLeft 1s ease-out;
+
+    @include respond(tab-land) {
+      width: 80%;
+      margin-bottom: 4rem;
+    }
+
+    @include respond(phone) {
+      width: 90%;
+    }
+
+    &-group {
+      display: block;
+      padding-bottom: 2rem;
+    }
+  }
+
+  &__label {
+    font-size: 1.7rem;
+    font-weight: 600;
+  }
+
+  &__input {
+    display: block;
+    font-size: 1.5rem;
+    padding: 1rem 1.5rem;
+    border: 1px solid $color-grey-light;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    border-radius: 6px;
+    background-color: rgba($color-white, 0.7);
+    width: 100%;
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 0.7rem $color-gold;
+      border: 1px solid $color-gold;
+    }
+  }
+
+  &__button {
+    padding: 1rem 1.5rem;
+    font-size: 2rem;
+    font-weight: 600;
+    background-color: $color-gold-dark;
+    font-family: inherit;
+    color: $color-white;
+    border: none;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    border-radius: 6px;
+    margin-top: 3rem;
+    cursor: pointer;
+    -webkit-transition: all 0.1s;
+    -moz-transition: all 0.1s;
+    -ms-transition: all 0.1s;
+    -o-transition: all 0.1s;
+    transition: all 0.1s;
+
+    &-wrapper {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+    &:hover {
+      box-shadow: 0 0.4rem 0.6rem rgba($color-black, 0.2);
+      -webkit-transform: translateY(-2.5px);
+      -moz-transform: translateY(-2.5px);
+      -ms-transform: translateY(-2.5px);
+      -o-transform: translateY(-2.5px);
+      transform: translateY(-2.5px);
+    }
+
+    &:active,
+    &:focus {
+      outline: none;
+      box-shadow: 0 0.2rem 0.2rem rgba($color-black, 0.2);
+      -webkit-transform: translateY(-1px);
+      -moz-transform: translateY(-1px);
+      -ms-transform: translateY(-1px);
+      -o-transform: translateY(-1px);
+      transform: translateY(-1px);
+    }
+  }
+
+  &__map {
+    width: 40%;
+    height: 50rem;
+    padding: 2rem;
+    border: 1px solid $color-primary-dark;
+    background-color: rgba($color-white, 0.7);
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    border-radius: 6px;
+    -webkit-animation: moveInRight 1s ease-out;
+    animation: moveInRight 1s ease-out;
+
+    @include respond(tab-land) {
+      width: 80%;
+    }
+
+    @include respond(phone) {
+      width: 90%;
+    }
+
+    &--iframe {
+      height: 100%;
+      width: 100%;
+      -webkit-border-radius: 6px;
+      -moz-border-radius: 6px;
+      -ms-border-radius: 6px;
+      -o-border-radius: 6px;
+      border-radius: 6px;
+    }
+  }
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;600;700&family=Rochester&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/main.css" />
+    <script
+      src="https://kit.fontawesome.com/e192af669b.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Elena Popova - Kontakt</title>
+  </head>
+  <body>
+    <div class="navigation" id="navbar">
+      <div class="navigation__nav" id="nav">
+        <p class="navigation__logo">Hebamme Elena Popova</p>
+        <a href="../index.html" class="navigation__link">Start</a>
+        <a href="leistungen.html" class="navigation__link">Leistungen</a>
+        <a href="ueber-mich.html" class="navigation__link">Über mich</a>
+        <a href="kontakt.html" class="navigation__link">Kontakt</a>
+        <a href="#" class="navigation__icon" id="icon">
+          <i class="fas fa-bars"></i>
+        </a>
+      </div>
+    </div>
+
+    <section class="section__kontakt">
+      <h2 class="heading-secondary">Kontakt</h2>
+      <div class="kontakt__wrapper">
+        <form action="mailto:hebamme_elenapopova@yahoo.de" method="POST" enctype=”multipart/form-data” class="kontakt__form" autocomplete="off">
+          <div class="kontakt__form-group">
+            <label for="name" class="kontakt__label">Name</label>
+            <input type="text" class="kontakt__input" id="name" required />
+          </div>
+
+          <div class="kontakt__form-group">
+            <label for="email" class="kontakt__label">E-Mail</label>
+            <input type="email" class="kontakt__input" id="email" required />
+          </div>
+
+          <div class="kontakt__form-group">
+            <label for="message" class="kontakt__label">Ihre Nachicht</label>
+            <textarea
+              class="kontakt__input"
+              id="message"
+              rows="7"
+              cols="50"
+              required
+            ></textarea>
+          </div>
+
+          <div class="kontakt__button-wrapper">
+            <button type="submit" value="submit" class="kontakt__button">
+              Nachicht senden
+            </button>
+          </div>
+        </form>
+
+        <div class="kontakt__map">
+          <iframe
+            class="kontakt__map--iframe"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16773.864923640103!2d9.34658824047468!3d54.18559553929295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7042358103b851b4!2sHebamme%20Elena%20Popova!5e0!3m2!1sde!2sde!4v1614084375731!5m2!1sde!2sde"
+            allowfullscreen=""
+            style="border: 0"
+            loading="lazy"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__top">
+        <div class="footer__left">
+          <p class="footer__text footer__text-heading">
+            Ich betreue werdende Eltern und junge Familien in ganz
+            Dithmarschen.<br />
+            Bitte nehmen Sie Kontakt zu mir auf
+          </p>
+          <p class="footer__text">
+            <i class="far fa-address-card"></i> Mühlenweg 20, 25767 Osterrade
+          </p>
+          <p class="footer__text">
+            <i class="fas fa-phone-alt"></i> 04802 9359960
+          </p>
+          <p class="footer__text">
+            <i class="far fa-envelope"></i> hebamme_elenapopova@yahoo.de
+          </p>
+        </div>
+        <div class="footer__right">
+          <img
+            src="../img/sincerely-media-9s7EOmv2HDA-unsplash.jpg"
+            alt="We're pregnant!"
+            class="footer__right-img"
+          />
+        </div>
+      </div>
+      <div class="footer__bottom">
+        &#169; 2021 Elena Popova. Design von Lisa Meister. Die Seite enthält
+        Bilder von unsplash.com
+      </div>
+    </footer>
+
+    <script src="../index.js"></script>
+  </body>
+</html>
