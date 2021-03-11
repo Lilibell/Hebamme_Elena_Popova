@@ -858,6 +858,10 @@ body {
   left: -10rem;
 }
 
+.kurse__dauer {
+  margin-right: 1.2rem;
+}
+
 .section__ueber {
   width: 100%;
   height: auto;
